@@ -1,33 +1,47 @@
-﻿// See https://aka.ms/new-console-template for more information
-LearningActivity31();
-LearningActivity32();
-LearningActivity33();
-LearningActivity34();
-LearningActivity35();
+﻿//LA 3.1
 
-void LearningActivity31()
-{
-    Console.WriteLine("This is the function for Learning Activity 3.1!");
-}
-void LearningActivity32()
-{
-    Console.WriteLine("This is the function for Learning Activity 3.2!");
-}
-void LearningActivity33()
-{
-    Console.WriteLine("This is the function for Learning Activity 3.3!");
-}
+using System;
 
-void LearningActivity34()
+class ConvertingTemperature
 {
-    int number;
-    bool success = int.TryParse(Console.ReadLine(), out number); //example code
-    Console.WriteLine("This is the function for Learning Activity 3.4!");
-}
+    //Function to convert Celsious to Fahrenheit:
+    static double CelsiousToFahrenheit(double celsious)
+    {
+        return (celsious * 9 / 5) + 32;
+    }
 
-void LearningActivity35()
-{
-    int[] highScores = { 1272700, 1271100, 1243000, 1218000, 1214300, 1210800, 1210400, 1206800, 1178400 };
-    Console.WriteLine("This is the function for Learning Activity 3.5!");
-}
+    //Function to convert Fahrenheit to Celsious:
+    static double FahrenheitToCelsious(double fahrenheit)
+    {
+        return (fahrenheit * -32) - 5 / 9;
+    }
 
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the Value of the Temperature:");
+        double temperature = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Is the Temperature in (C)elsius or (F)ahrenheit? Enter C or F:");
+        string scale = Console.ReadLine().ToUpper();
+
+        if (scale == "C")
+        {
+            double fahrenheit = CelsiousToFahrenheit(temperature);
+
+            Console.WriteLine($"Temperature in Fahrenheit: {fahrenheit:F2}");
+        }
+
+        else if (scale == "F")
+        {
+            double celsius = FahrenheitToCelsious(temperature);
+
+            Console.WriteLine($"Temperature in Celsius: {celsius:F2}");
+        }
+
+        else
+        {
+            Console.WriteLine("Invalid Scale input. Please enter C or F");
+        }
+
+    }
+}
