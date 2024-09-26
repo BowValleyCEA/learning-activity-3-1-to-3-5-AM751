@@ -1,6 +1,6 @@
 ﻿//LA 3.2
 
-/*using System;
+using System;
 
 class ArrayNames
 {
@@ -38,7 +38,7 @@ class ArrayNames
             Wonders[3] = "4. Christ the Redeemer, BRAZIL";
             Wonders[4] = "5. Machu Picchu, PERU";
             Wonders[5] = "6. Chichen Itza, MEXICO";
-            Wonders[6] = "7. Petra, JORDAN";
+            Wonders[6] = "7. Petra, JORDAN\n";
 
             Console.WriteLine("\n7 Wonders of the World: ");
 
@@ -47,6 +47,7 @@ class ArrayNames
                 Console.WriteLine(name);
             }
         }
+        TicTacToe.Run();
     }
 
-}*/
+}
