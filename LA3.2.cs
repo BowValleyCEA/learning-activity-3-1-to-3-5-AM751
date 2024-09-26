@@ -1,6 +1,6 @@
 ﻿//LA 3.2
 
-using System;
+/*using System;
 
 class ArrayNames
 {
@@ -11,7 +11,7 @@ class ArrayNames
         classmates[0] = "1. Maahin. Age: 23";
         classmates[1] = "2. Emre. Age: 20";
         classmates[2] = "3. Ethan. Age: 27";
-        classmates[3] = "4. Mason. Age: 29";
+        classmates[3] = "4. Mason. Age: 29";             
         classmates[4] = "5. Keegan. Age: 25 ";
         classmates[5] = "6. Cat. Age: 24";
         classmates[6] = "7. Bruno. Age: 24";
@@ -49,4 +49,4 @@ class ArrayNames
         }
     }
 
-}
+}*/
